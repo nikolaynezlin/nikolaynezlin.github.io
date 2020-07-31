@@ -2,9 +2,9 @@
 
 This is a first line.  
 This is a second line.  
-> This is a blockquote.
+> This is a blockquote.  
 This is an image:  
 
-    [An image](/Drones/Picture1.jpg)  
+    (/Drones/Picture1.jpg)  
   
 The next line.    
