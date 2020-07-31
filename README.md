@@ -5,6 +5,6 @@ This is a second line.
 > This is a blockquote.  
 This is an image:  
 
-    (/Drones/Picture1.jpg)  
+![Image](/Drones/Picture1.jpg)  
   
 The next line.    
