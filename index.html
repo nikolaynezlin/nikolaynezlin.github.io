@@ -95,12 +95,23 @@
 
 <!-- The main menu -->
 <div class="navbar">
-  <a onclick="openTab(event, 'About_me')" id="defaultOpen"><b>About me</b></a>
-  <a onclick="openTab(event, 'Publications')"><b>Publications</b></a>
-
-
+    <a onclick="openTab(event, 'About_me')" id="defaultOpen"><b>About me</b></a>
+    <a onclick="openTab(event, 'Publications')"><b>Publications</b></a>
+    <div class="dropdown">
+        <button class="dropbtn"><b>Research</b> 
+            <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+            <a  onclick="openTab(event, 'Plumes_satellites')"><b>Stormwater plumes from satellites, SCCWRP, 2005-2015</b></a>
+            <a  onclick="openTab(event, 'Eutrophication_effect')"><b>Eutrophication effect in southern California, SCCWRP, 2017-2018</b></a>
+            <a  onclick="openTab(event, 'Trends_chlorophyll')"><b>Climatic trends in Southern California Bight, SCCWRP, 2015-2018</b></a>
+            <a  onclick="openTab(event, 'Drone_imagery')"><b>Drone imagery, SCCWRP, 2017-2018</b></a>
+            <a  onclick="openTab(event, 'Argo_stability')"><b>Stability of Argo conductivity cells, RBR, 2019-2020</b></a>
+        </div>  <!-- class="dropdown-content" -->
+    </div>  <!-- class="dropdown" -->
+    <a onclick="openTab(event, 'Data_visualization')"><b>Data visualization</b></a>
 </div> <!-- div class="navbar" -->
-
+<hr>
 
 	
 	
