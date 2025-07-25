@@ -943,9 +943,63 @@ Argo_stability
 </div>  <!-- id="Argo_stability" class="tabcontent" -->
 	
 
+
+	
 <!-- Tab "Data_visualization" -->
 <div id="Data_visualization" class="tabcontent">
-Data_visualization
+<div class="row">
+	<div class="column" style="width:10%;float:left">&nbsp;</div>
+	<div class="column" style="width:80%;float:left">
+  		<h2 style="text-align:center;">Data visualization tools built using R-Shiny technology</h2>
+		<p>These interactive tools were built using 
+			<a href="https://shiny.rstudio.com/" target="_blank">R-Shiny</a> 
+			technology for visual analysis of oceanographic data collected during water quality monitoring 
+			around major wastewater outfalls in southern California.</p>
+		<p>First tool helps analyzing a typical oceanographic dataset, collected using 
+			<a href="http://www.seabird.com/" target="_blank">Conductivity-Temperature-Depth profilers.</a></p>
+		<p>Start the application in new window:&nbsp;&nbsp;&nbsp; 
+		<b style="font-size:32px;background-color:#aaccff;">&nbsp;
+		<a href="https://sccwrp.shinyapps.io/map_profiles_ocsd_v100/" target="_blank">
+			CTD profiles&nbsp;</a></b></p>
+		<p>In the center you see the vertical profiles collected in Fall 2005 around the 
+					<a href="https://www.ocsd.com/" target="_blank">Orange County Sanitation District</a> outfall.  
+					You can see the profiles of Temperature (<b>TdegC</b>), Salinity (<b>Spsu</b>), Specific Density 
+					(<b>Sigma</b>), Colored Dissolved Organic Matter (<b>CDOM</b>), Chlorophyll concentration (<b>CHL</b>) 
+					and Dissolved Oxygen (<b>DO</b>).</p>
+		<p>Select the parameter you would like to see (<b>TdegC, Spsu, Sigma, CDOM, CHL</b> or <b>DO</b>) and 
+					the vertical scale (<b>Depth</b> or <b>Density</b>). </p>	
+		<p>To zoom in, brush and double-click in the rectangle.</p>
+		<p>To zoom out, double-click anywhere in the plot area. </p>
+		<p>To the left, you see the map of stations where profiles were collected. You can zoom in and out and 
+					move the map with the mouse pointer. </p>
+		<p>To the right, you see the table of stations. You can browse it and search stations by their IDs. 
+					Also, clicking triangles to the right of the <b>Stn_ID</b> column you can sort the stations by their 
+					IDs in alphabetic order.  Clicking triangles to the right of the <b>Date/Time</b> column you can sort 
+					the stations in the order they were collected.</p>	
+		<p>Looking at the profile which is different from the others, you can click it, making the profile red and 
+					seeing the station ID in the legend and the station at the map as a large red circle.  To unselect, 
+					click anywhere in the plot.</p>
+		<p>If you wish to analyze the profiles in certain area, select one station at the map, making the station 
+					marker and the profile green. To unselect, click anywhere in the map. </p>
+		<p>If you want to select several stations by their IDs, click them in the table and see their profiles 
+					and locations in blue. </p>
+		<p>To unselect all selected stations and profiles, click the <b>Clear</b> button below the table. </p>
+		<h4>The same data look great as a 3D plot.</h4>
+		<p>Start the application and see the wastewater plume as a high CDOM concentration around the outfall:
+					&nbsp;&nbsp;&nbsp;<b style="font-size:32px;background-color:#aaccff;">&nbsp;
+					<a href="https://sccwrp.shinyapps.io/scb_3d_shiny09/" target="_blank">
+					3D plot&nbsp;</a></b></p>
+		<p>To see Temperature (<b>TdegC</b>), Salinity (<b>Spsu</b>), Chlorophyll (<b>CHL</b>), 
+					Colored Dissolved Organic Matter (<b>CDOM</b>) and Dissolved Oxygen (<b>DO</b>), select the parameter 
+					from the drop-down menu. </p>
+		<p>Using sliders, you can change the <b>viewpoint</b> (<b>height</b> and <b>azimuth</b>), the depth of horizontal
+					(<b>Z</b>) <b>slice</b> and the location of vertical north-to-south (<b>NS</b>) <b>slice</b>. </p>
+		<p>Using slider to the right, you can change the <b>color scale</b>. </p>
+		<p>This is just an example demonstrating how these visualization tools could be used for the analysis of 
+					different kinds of oceanographic data, the results of automatic plume detection and modeling of nearshore 
+					processes.</p>
+	</div>   <!-- class="column" -->
+</div>    <!-- class="row" -->
 </div>  <!-- id="Data_visualization" class="tabcontent" -->
 	
 
