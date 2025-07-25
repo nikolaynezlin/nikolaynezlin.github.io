@@ -851,10 +851,90 @@
 			<br><br><br>
 	</div> <!-- column -->
 </div> <!-- row -->
-
-	
-
+<div class="row">
+	<div class="column" style="width:10%;float:left">&nbsp;</div>
+	<div class="column" style="width:80%;float:left">
+		<div class="row">
+			<div class="column" style="width:45%;float:left">
+				<img src="Drones/Picture2.jpg" alt="Drone imagery" 
+						style="width:400px;height:auto;float:right">
+				<br>
+				<p>Drone collects series of images over the region of interest</p>
+			</div>   <!-- class="column" -->
+			<div class="column" style="width:5%;float:left">&nbsp;</div>
+			<div class="column" style="width:45%;float:left">
+				<img src="Drones/Picture3.jpg" alt="3D model" style="width:500px;height:auto;">
+				<p>Using Pix4D software, 3D model is produced from images and georegistered using Ground Control Points</p>
+			</div>   <!-- class="column" -->
+		</div>    <!-- class="row" -->
+		<br>
+		<div class="row">
+			<div class="column" style="width:30%;float:left">
+				<br>
+				<img src="Drones/Picture4.jpg" alt="3D model: measurements" 
+						style="width:400px;height:auto">
+				<br>
+				<p>Objects in 3D model can be measured, including distances, areas and volumes</p>
+			</div>   <!-- class="column" -->
+			<div class="column" style="width:5%;float:left">&nbsp;</div>
+			<div class="column" style="width:25%;float:left">
+				<img src="Drones/Picture5.jpg" alt="3D model: Terrain" style="width:300px;height:auto">
+				<br>
+				<p>By removing small objects from 3D model, Digital Elevation Model (DEM) of terrain can be produced</p>
+			</div>   <!-- class="column" -->
+			<div class="column" style="width:2%;float:left">&nbsp;</div>
+			<div class="column" style="width:35%;float:left">
+				<br><br>
+					<img src="Drones/Picture6.jpg" alt="3D model: Color" style="width:500px;height:auto">
+					<br>
+					<p>Surface can be classified by its color. Normalized Digital Vegetation Index (NDVI) is used to
+						quantify vegetation by measuring the difference between near-infrarted (which vegetation reflects) and red light (which vegetation absorbs)</p>
+			</div>   <!-- class="column" -->
+		</div>   <!-- class="row" -->
+		<br>
+		<p>Over water, standard software like Pix3D cannot merge images, because the surface is unstable and 
+				tie points cannot be automatically selected.
+			<br>​<br>
+			Instead, I made a MATLAB code transforming images to georeferenced rasters using the image EXIF 
+			metadata, correcting them for distortion and merging several rasters into one.</p>
+		<br>
+		<div class="row">
+			<div class="column" style="width:25%;float:left">
+			<br>
+				<img src="Drones/Picture11.jpg" alt="Over water" style="width:320px;height:auto">
+				<br>
+				<p>Nearinfrared image (790 nm) taken by Sequoia camera.</p>
+				<p>EXIF metadata includes:</p>
+				<ul>
+					<li>Image position (latitude, longitude, altitude)</li>
+					<li>Orientation (heading, pitch and roll)</li>
+					<li>Lens distortion parameters</li>
+				</ul>
+			</div>   <!-- class="column" -->
+			<div class="column" style="width:5%;float:left">&nbsp;</div>
+			<div class="column" style="width:35%;float:left">
+				<br>
+				<img src="Drones/Picture12.jpg" alt="Georeferenced image" style="width:380px;height:auto">
+				<br>
+				<p>MATLAB code transforms each pixel from image coordinates to world coordinates, resulting in 
+						georeferenced raster.</p>
+			</div>   <!-- class="column" -->
+			<div class="column" style="width:5%;float:left">&nbsp;</div>
+			<div class="column" style="width:35%;float:left">
+				<img src="Drones/Picture13.jpg" alt="Merged rasters" style="width:350px;height:auto">
+				<br>
+				<p>Several georeferenced rasters can be merged to one large raster using available manual tie points
+						(seashore, buoys, pilings, etc.).</p>
+			</div>   <!-- class="column" -->
+		</div>    <!-- class="row" -->
+		<p>Unfortunately, this project was stopped due to funding problems.  Hopefully, in future I will 
+			  have a chance to continue this work. </p>
+	</div>   <!-- class="column" -->
+</div>    <!-- class="row" -->
 </div>  <!-- id="Drone_imagery" class="tabcontent" -->
+
+
+
 	
 
 <!-- Tab "Argo_stability" -->
