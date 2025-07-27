@@ -1204,7 +1204,35 @@ on Argo floats, 2019-2020</h2>
 	
 </div> <!-- row -->
 <br>
+<div class="row">
+	<div class="column" style="width:10%;float:left">&nbsp;</div>
+	<div class="column" style="width:40%;float:left">
+		<b>Method of detection of regime shifts in different locations of the Great Lakes</b>
+		<br><br>
+		Integrated algorithm including<br><br>
+		<ul>
+			<li>Seasonal-Trend decomposition (STL) (<i>Cleveland et al., 1990. Journal of Official Statistics, 6(1), 3-73</i>)</li>
+				<ul>
+					<li>Uses locally estimated scatterplot smoothing (LOESS) method based on local polynomial regressions</li>
+					<li>Detects and removes seasonal variability</li>
+				</ul>
+			<li>Sequential T-test Analysis of Regime Shifts (STARS) (Rodionov, 2004. Geophysical Research Letters, 31(9). 
+				https://doi.org/10.1029/2004GL019448)</li>
+				<ul>
+					<li>Based on Student’s t-test </li>
+					<li>Detects persistent changes in the system</li>
+				</ul>
+			<li>Regime shift – when the cascade of decreasing 	shifts changes to stable state</li>
+		</ul>
+	</div> <!-- column -->
+	<div class="column" style="width:40%;float:left">
+		<img src="Great_Lakes/Fig04_ts.png" alt="Regime shifts detection" 
+		style="float:left;width:600px;height:auto;margin-left:32px;">
+	</div> <!-- column -->
+
 	
+</div> <!-- row -->
+<br>
 
 </div>  <!-- id="Great_Lakes" class="tabcontent" -->
 
