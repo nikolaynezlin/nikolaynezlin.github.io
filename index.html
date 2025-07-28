@@ -1455,7 +1455,25 @@ on Argo floats, 2019-2020</h2>
 	</div> <!-- column -->	
 </div> <!-- row -->
 <br>
-
+<div class="row">
+	<div class="column" style="width:10%;float:left">&nbsp;</div>
+	<div class="column" style="width:80%;float:left">
+		Extra-Trees (ET, aka Extremely Randomized Trees) belong to ensemble learning approach,
+		which enhance predictive performance by combining the predictions from multiple models.<br>
+		<br>
+		Like Random Forest (RF) models, an ET model is an ensemble of multiple tree predictors, where every individual
+		tree is constructed using a bootstrap approach (sampling with replacement). Unlike RF, where a random subset 
+		of features from the training dataset is considered for splitting, and the optimal split is chosen at each node,
+		split points in ET are selected randomly and the entire dataset (without bootstrapping) is unsed for training each tree.
+		After obtaining results from all the trees, the final prediction is obtained through averaging in the case of a 
+		regression model or majority voting in the case of a classification model.<br>
+		<br>
+		Since node splits in ET are random, it works significantly faster than RF. Training ET models is a fast process usually
+		requiring little or no tuning in order to achieve optimal performance [67]. Several studies have demonstrated an advantage 
+		in the performance of ET models as compared to RF and other ML methods.
+	</div> <!-- column -->	
+</div> <!-- row -->
+<br>
 
 	
 </div>  <!-- id="CHL_CPB_ML" class="tabcontent" -->
