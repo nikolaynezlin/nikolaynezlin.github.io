@@ -1126,15 +1126,19 @@ on Argo floats, 2019-2020</h2>
 <div class="row">
 	<div class="column" style="width:10%;float:left">&nbsp;</div>
 	<div class="column" style="width:30%;float:left">
-		<br><br><br><br><br>
+		<br><br><br><br>
+		<b>Method:</b>
+		<br>
 		<ul>
 			<li>Interactive selection of small coastal regions (total 105)</li>
-			<li>Using Landsat-5/7/8/9 and Sentinel-2 satellite images</li>
-			<li>Filtering out the images collected during high and low tides using FES2014 tidal model</li>
+			<li>Landsat-5/7/8/9 and Sentinel-2 satellite images collected over the region of interest selected from datacube</li>
+			<li>The images collected during high and low tides are filtered out (using FES2014 tidal model)</li>
 			<li>Images resampled for quarterly (3-month) periods</li>
 			<li>Modified Normalized Digital Water Index (MNDWI) is used to classify the pixels into land/water:<br>
 				MNDWI = (Green - SWIR) / (Green + SWIR)</li>
-			<li>Assessment of shoreline changes is based on the portion of ‘land’ pixels in small (100-m radius) circular regions along the coastline</li>
+			<li>Assessment of shoreline changes is based on the portion of ‘land’ pixels in small (100-m radius) circular regions 
+				along the coastline</li>
+			<li>The rates of coast chage (m/year) calculated</li>
 		</ul>
 	</div> <!-- column -->
 	<div class="column" style="width:50%;float:left">
@@ -1150,9 +1154,12 @@ on Argo floats, 2019-2020</h2>
 				style="float:left;width:800px;height:auto;margin-left:32px;">
 	</div> <!-- column -->
 	<div class="column" style="width:30%;float:left">
-		<br><br><br><br><br>
+		<br><br><br><br>
+		<b>Results:</b>
+		<br>
 		<ul>
-			<li>The maps of the grades of shoreline evolution obtained by both methods (satellte imagery and aerial photography) were similar</li>
+			<li>The maps of the grades of shoreline evolution obtained by both methods (satellte imagery and aerial photography) 
+				were similar</li>
 			<li>Maximum changes (mostly “land loss/erosion”) observed along exposed reaches of shoreline</li>
 			<li>Few locations demonstrate evident disagreement probably resulting from the differences in the periods of assessment</li>
 		</ul>
