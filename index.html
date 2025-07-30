@@ -1509,11 +1509,11 @@ on Argo floats, 2019-2020</h2>
 <div class="row">
 	<div class="column" style="width:10%;float:left">&nbsp;</div>
 	<div class="column" style="width:80%;float:left">
-		The machine learning models predicting Chl-a in the Chesapeake Bay from Rrs were
+		The machine learning models predicting Chl-a in the Chesapeake Bay from <i>Rrs</i> were
 		trained and tested on a dataset compiled from two sources:
 		<ol>
-			<li>pairs of Rrs and Chl-a measured in situ</li>
-			<li>in situ Chl-a paired with satellite-based Rrs collected over the same location during the same day by two satellites:</li>
+			<li>pairs of <i>Rrs</i> and Chl-a measured in situ</li>
+			<li>in situ Chl-a paired with satellite-based <i>Rrs</i> collected over the same location during the same day by two satellites:</li>
 				<ul>
 					<li>Moderate Resolution Imaging Spectroradiometer onboard the Aqua platform (MODIS-Aqua)</li>
 					<li>Visible Infrared Imaging Radiometer Suite on the Suomi National Polar-orbiting Partnership platform (VIIRS-SNPP)</li>
@@ -1527,10 +1527,8 @@ on Argo floats, 2019-2020</h2>
 <div class="row">
 	<div class="column" style="width:10%;float:left">&nbsp;</div>
 	<div class="column" style="width:80%;float:left">
-		Extra-Trees (ET, aka Extremely Randomized Trees) belong to ensemble learning approach,
-		which enhance predictive performance by combining the predictions from multiple models.<br>
-		<br>
-		Like Random Forest (RF) models, an ET model is an ensemble of multiple tree predictors, where every individual
+		Like more famous Random Forest (RF) models, an Extra-Trees (ET, aka Extremely Randomized Trees)  model is an ensemble of multiple 
+		tree predictors, where every individual
 		tree is constructed using a bootstrap approach (sampling with replacement). Unlike RF, where a random subset 
 		of features from the training dataset is considered for splitting, and the optimal split is chosen at each node,
 		split points in ET are selected randomly and the entire dataset (without bootstrapping) is unsed for training each tree.
@@ -1568,13 +1566,13 @@ on Argo floats, 2019-2020</h2>
 	<div class="column" style="width:30%;float:left">
 		<br><br><br><br>
 		The test of feature importance in the ET models reveals two wavelengths that play
-		a primary role in predicting Chl-a from Rrs — blue–green (488 nm for MODIS-Aqua and
+		a primary role in predicting Chl-a from <i>Rrs</i> — blue–green (488 nm for MODIS-Aqua and
 		486 nm for VIIRS-SNPP) and red (667 nm for MODIS-Aqua and 671 nm for VIIRS-SNPP).<br>
 		<br>
 		Including in the ET model additional features like latitude (distance from the river mouth),
 		day of year (season), and depth and distance offshore, insignificantly
 		improved the accuracy. Taking into account a small role of position features, we calculated monthly
-		Chl-a composites using ET models based solely on remotely-sensed reflectances (Rrs) measured by both sattellites.
+		Chl-a composites using ET models based solely on remotely-sensed reflectances (<i>Rrs</i>) measured by both sattellites.
 	</div> <!-- column -->
 </div> <!-- row -->
 <br>
